@@ -1,11 +1,11 @@
 {
-  "name": "cordova-plugin-wkwebview-engine",
+  "name": "cordova-plugin-rawzor-wkwebview-engine",
   "version": "1.2.0-dev",
   "description": "The official Apache Cordova WKWebView Engine Plugin",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-wkwebview-engine"
+    "url": "https://github.com/sachingarg05/cordova-plugin-wkwebview-engine"
   },
   "bugs": {
     "url": "https://issues.apache.org/jira/browse/CB"
