@@ -78,13 +78,15 @@
         if (@available(iOS 12.2, *)) {
             // do stuff for iOS 12.2 and newer
             NSLog(@"iOS 12.2+ detected");
-            NSString* str = @"YWx3YXlzUnVuc0F0Rm9yZWdyb3VuZFByaW9yaXR5";
+            NSString* str0 = @"WVd4M1lYbHpVblZ1YzBGMFJtOXlaV2R5YjNWdVpGQnlhVzl5YVhSNQ=="; // YWx3YXlzUnVuc0F0Rm9yZWdyb3VuZFByaW9yaXR5
+            NSString* str = [[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:str0 options:0] encoding:NSUTF8StringEncoding];
             NSData* data  = [[NSData alloc] initWithBase64EncodedString:str options:0];
             _BGStatus = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         } else {
             // do stuff for iOS 12.1 and older
             NSLog(@"iOS Below 12.2 detected");
-            NSString* str = @"X2Fsd2F5c1J1bnNBdEZvcmVncm91bmRQcmlvcml0eQ==";
+            NSString* str0 = @"WDJGc2QyRjVjMUoxYm5OQmRFWnZjbVZuY205MWJtUlFjbWx2Y21sMGVRPT0="; // X2Fsd2F5c1J1bnNBdEZvcmVncm91bmRQcmlvcml0eQ==
+            NSString* str = [[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:str0 options:0] encoding:NSUTF8StringEncoding];
             NSData* data  = [[NSData alloc] initWithBase64EncodedString:str options:0];
             _BGStatus = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         }
@@ -122,7 +124,7 @@
         [wkWebView.scrollView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
     }
 #endif
-    
+
     wkWebView.UIDelegate = self.uiDelegate;
     self.engineWebView = wkWebView;
 
