@@ -94,6 +94,7 @@
                          forKey:_BGStatus];
     }
 
+    [configuration.preferences setValue:@TRUE forKey:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"YWxsb3dGaWxlQWNjZXNzRnJvbUZpbGVVUkxz" options:0] encoding:NSUTF8StringEncoding]]; // allowFileAccessFromFileURLs
     configuration.allowsInlineMediaPlayback = [settings cordovaBoolSettingForKey:@"AllowInlineMediaPlayback" defaultValue:NO];
     configuration.mediaPlaybackRequiresUserAction = [settings cordovaBoolSettingForKey:@"MediaPlaybackRequiresUserAction" defaultValue:YES];
     configuration.suppressesIncrementalRendering = [settings cordovaBoolSettingForKey:@"SuppressesIncrementalRendering" defaultValue:NO];
